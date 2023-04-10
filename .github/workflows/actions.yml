@@ -4,7 +4,7 @@ on:
     types: [started]
 
   schedule:
-    - cron: '0 0 0 * * 2'
+    - cron: "0 0 * * 2"
 
 jobs:
   dxx_job:
