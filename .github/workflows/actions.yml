@@ -18,6 +18,8 @@ jobs:
         with:
           python-version: "3.10"
       - name: Auto-learning
+        env:
+          SCKEY: ${{secrets.OPENID}}
         run: |
           pip install requests
           python qndxx_script.py
