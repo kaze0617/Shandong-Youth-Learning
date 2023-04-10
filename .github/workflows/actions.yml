@@ -18,7 +18,9 @@ jobs:
         with:
           python-version: "3.10"
       - name: Auto-learning
-        run: python qndxx_script.py
+        run: |
+          pip install requests
+          python qndxx_script.py
       - name: Send mail
         uses: dawidd6/action-send-mail@v3
         with:
